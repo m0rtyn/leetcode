@@ -10,7 +10,9 @@
  * @return {number[]}
  */
 var getConcatenation = function(nums) {
-    
+    return []
 };
+
+'string'[0].toUpperCase() // ?
 // @lc code=end
 
