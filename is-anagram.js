@@ -35,4 +35,4 @@ var isAnagram = function(s, t) {
   return hashValues.every(val => val === 0);
 }
 
-isAnagram('anagram', 'nagaram') // ?
+// isAnagram('anagram', 'nagaram') // ?

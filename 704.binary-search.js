@@ -10,31 +10,17 @@
  * @param {number} target
  * @return {number}
  */
-function search(nums, target) {
-  const iter = (acc, counter) => {
-    if (counter.length === 1) {
-      return counter[0] === target ? acc : -1;
-    }
-
-    return iter(...getSearchingHalf(counter, target, acc));
-  };
-
-  return iter(0, nums);
-}
-
-function getSearchingHalf(
-  numbers,
-  target,
-  acc
-) {
-  const middleIndex = Math.floor(numbers.length / 2);
-
-  if (target < numbers[middleIndex]) {
-    return [acc, numbers.slice(0, middleIndex)];
-  } else {
-    return [acc + middleIndex, numbers.slice(middleIndex, numbers.length)];
-  }
+var search = function(nums, target) {
+  const firstIdx = 0
+  const lastIdx = nums.length - 1
+  return biSearch(nums, target, firstIdx, lastIdx)
+};
+  
+const biSearch = (nums, target, first, last) => {
+  const middleIdx = Math.floor((first + last) / 2)
+  return target === nums[middleIdx] ? middleIdx 
+    : first >= last ? -1 
+    : target < nums[middleIdx] ? biSearch(nums, target, first, middleIdx) 
+    : biSearch(nums, target, middleIdx+1, last)
 }
 // @lc code=end
-
-search([-1,0,3,5,9,12], 9) // ?

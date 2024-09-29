@@ -41,17 +41,17 @@ function mergeTwoLists(list1, list2) {
   return result
 };
 
-mergeTwoLists(
-  new ListNode(1),
-  new ListNode(1)
-)?.toString(); //?
+// mergeTwoLists(
+//   new ListNode(1),
+//   new ListNode(1)
+// )?.toString(); //?
 
-mergeTwoLists(
-  new ListNode(1, new ListNode(2, new ListNode(4))),
-  new ListNode(20, new ListNode(40, new ListNode(50, new ListNode(100))))
-)?.toString() //?
+// mergeTwoLists(
+//   new ListNode(1, new ListNode(2, new ListNode(4))),
+//   new ListNode(20, new ListNode(40, new ListNode(50, new ListNode(100))))
+// )?.toString() //?
 
-mergeTwoLists(
-  new ListNode(),
-  new ListNode()
-)?.toString(); //?
+// mergeTwoLists(
+//   new ListNode(),
+//   new ListNode()
+// )?.toString(); //?

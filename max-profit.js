@@ -25,4 +25,4 @@ function maxProfit(prices) {
 // maxProfit([3, 1, 2]) // ?
 // maxProfit([4, 3, 1, 2]) // ?
 // maxProfit([3, 1, 2, 4]) // ?
-maxProfit([7, 1, 5, 3, 6, 4]) // ?
+// maxProfit([7, 1, 5, 3, 6, 4]) // ?
